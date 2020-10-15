@@ -701,7 +701,7 @@ describe("socket.io", () => {
       );
     });
 
-    it.only("should close a client without namespace", done => {
+    it("should close a client without namespace", done => {
       const srv = createServer();
       const sio = new Server(srv, {
         connectTimeout: 10
