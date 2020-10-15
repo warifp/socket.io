@@ -19,7 +19,7 @@ export class Namespace extends EventEmitter {
 
   /** @private */
   _fns: Array<(socket: Socket, next: (err: Error) => void) => void> = [];
-  
+
   /** @private */
   _rooms: Set<Room> = new Set();
 
